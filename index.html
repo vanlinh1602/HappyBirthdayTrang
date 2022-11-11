@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+
+<HEAD>
+
+    <TITLE> New Document </TITLE>
+
+    <META NAME="Generator" CONTENT="EditPlus">
+
+    <META NAME="Author" CONTENT="">
+
+    <META NAME="Keywords" CONTENT="">
+
+    <META NAME="Description" CONTENT="">
+
+    <style>
+        html,
+        body {
+
+            height: 100%;
+
+            padding: 0;
+
+            margin: 0;
+
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url('./image/background.jpg');
+        }
+
+        canvas {
+
+            position: absolute;
+
+            width: 100%;
+
+            height: 100%;
+
+        }
+
+        .content {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+               1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+        }
+
+        .container {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            position: absolute;
+            left: 0;
+            top: 0px;
+            right: 0px;
+            bottom: 0;
+            margin: auto auto;
+        }
+    </style>
+
+</HEAD>
+
+
+<BODY>
+    <audio src="./music/Happy.mp3" autoplay loop></audio>
+    <div class="container">
+        <p class="content" id="mainContent">E hèm</p>
+    </div>
+    <canvas id="pinkboard"></canvas>
+    <script src="./ortherScript.js"></script>
+    <script src="./script.js"></script>
+
+</BODY>
+
+</HTML>
