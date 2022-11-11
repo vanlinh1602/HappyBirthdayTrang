@@ -18,6 +18,35 @@ const listContent = [
 
 const divContent = document.getElementById('mainContent');
 
+window.onload = () => {
+    console.log(1);
+    var x = document.createElement("AUDIO");
+  
+    if (x.canPlayType("audio/mpeg")) {
+      x.setAttribute("src","./music/happy.mp3");
+    } else {
+      x.setAttribute("src","./music/happy.ogg");
+    }
+    x.setAttribute("autoplay", "autoplay");
+    x.setAttribute("loop", "loop");
+    x.setAttribute("hidden", "hidden");
+    document.body.appendChild(x);
+}
+
+function myFunction() {
+    console.log(1);
+    var x = document.createElement("AUDIO");
+  
+    if (x.canPlayType("audio/mpeg")) {
+      x.setAttribute("src","./music/happy.mp3");
+    } else {
+      x.setAttribute("src","./music/happy.ogg");
+    }
+  
+    x.setAttribute("controls", "controls");
+    document.body.appendChild(x);
+  }
+
 const setContent = async () => {
     let time = 0
     listContent.forEach(async (item) => {
